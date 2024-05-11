@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id='medicineTable'>
+        <tr>
+            <th>No.</th>
+            <th>Medicine Name</th>
+            <th>Before/After Meal</th>
+            <th>Times a day</th>
+            <th>Dose duration</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                <input type="text" id="medicine_name" name="medicine_name" placeholder="search...">
+            </td>
+            <td>
+                <select name="BA meal" id="BAmeal">
+                    <option value="before">before</option>
+                    <option value="after">after</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" id="times" name="times">
+            </td>
+            <td>
+                <input type="number" id="duration" name="duration">
+            </td>
+        </tr>
+    </table>
+    <button id="add_medicine">Add Medicine</button>
+    
+    <script src="MakePrescription.js"></script>
+</body>
+</html>

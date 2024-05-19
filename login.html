@@ -1,25 +1,44 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="loginStyle.css">
-    </head>
-    <body>
-      <div class="log-form">
-          <h2>Login to your account</h2>
-          <form>
-            <input type="text" title="username" placeholder="username" />
-            <input type="password" title="username" placeholder="password" />
-            <a href="Dashboard/index.html">
-                <button type="button" class="btn">Login</button>
-            </a>
-            <a class="forgot" href="#">Forgot Username?</a>
-          </form>
-        </div><!--end log form -->
-    
-  </body>
-  </html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('images/loginbackground.jpg');
+          height: 100vh;
+          width: 100vw;
+        }
+        </style>
+  <div class="full-screen-container">
+    <div class="login-container">
+      <h1 class="login-title">Welcome</h1>
+      <form class="form">
+        <div class="input-group success">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+          <span class="msg">Valid email</span>
+        </div>
+
+        <div class="input-group error">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+          <span class="msg">Incorrect password</span>
+        </div>
+
+        <!-- <button type="submit"  -->
+        <!-- <button type="submit" class="login-button" onclick="">Log In</button> -->
+        <a href="login.html">
+          <button type="submit" class="login-button" onclick="">Log In</button>
+        </a>
+        <p>Don't have account? <a href="SignUp.html">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,3 +1,0 @@
-todo::
-icons using boxicons
-Logo not responsive

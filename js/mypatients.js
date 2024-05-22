@@ -80,17 +80,17 @@ switchMode.addEventListener('change', function () {
 // Add table
 
 // Get the table element
-const table = document.getElementById("medicineTable");
+const table = document.getElementById("PatientTable");
 
 // Get the button element
-const addButton = document.getElementById("add_medicine");
+const addButton = document.getElementById("add_patient");
 
 //Number track
-var no_of_medicine = 1;
+var no_of_patient = 0;
 
 // Add event listener to the button
 addButton.addEventListener("click", function() {
-    no_of_medicine++;
+    no_of_patient++;
     // Create a new row
     const newRow = document.createElement("tr");
 
@@ -100,13 +100,15 @@ addButton.addEventListener("click", function() {
     const cell3 = document.createElement("td");
     const cell4 = document.createElement("td");
     const cell5 = document.createElement("td");
+    const cell6 = document.createElement("td");
 
     // Set the content of the cells
-    cell1.textContent = no_of_medicine;
-    cell2.innerHTML = "<input type=\"text\" id=\"medicine_name\" name=\"medicine_name\" placeholder=\"search...\">";
-    cell3.innerHTML = "<select name=\"BA meal\" id=\"BAmeal\"><option value=\"before\">before</option><option value=\"after\">after</option></select>";
-    cell4.innerHTML = "<input type=\"number\" id=\"times\" name=\"times\">";
-    cell5.innerHTML = "<input type=\"number\" id=\"duration\" name=\"duration\">";
+    cell1.textContent = "PT_240"+no_of_patient;
+    cell2.innerHTML = "<input type=\"text\" id=\"patient_name\" name=\"patient_name\" placeholder=\"Name...\">";
+    cell3.innerHTML = "<input type=\"number\" id=\"Age\" name=\"Age\">";
+    cell4.innerHTML = "<input type=\"number\" id=\"Phone\" name=\"Phone\">";
+    cell5.innerHTML = "<select name=\"Blood_Group\" id=\"BG\"><option value=\"A+\">A+</option><option value=\"A-\">A-</option><option value=\"B+\">B+</option><option value=\"B-\">B-</option><option value=\"AB-\">AB-</option><option value=\"AB+\">AB+</option><option value=\"O+\">O+</option><option value=\"O-\">O-</option></select>";
+    cell6.innerHTML = "<a href=\MakePrescription.html\>Make Prescription</a>";
     
 
 
@@ -116,6 +118,7 @@ addButton.addEventListener("click", function() {
     newRow.appendChild(cell3);
     newRow.appendChild(cell4);
     newRow.appendChild(cell5);
+    newRow.appendChild(cell6);
 
     // Append the new row to the table
     table.appendChild(newRow);

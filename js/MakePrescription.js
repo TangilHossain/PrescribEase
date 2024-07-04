@@ -77,7 +77,7 @@ switchMode.addEventListener('change', function () {
 
 
 
-// Add table
+// Add table For medicine
 
 // Get the table element
 const table = document.getElementById("medicineTable");
@@ -103,9 +103,9 @@ addButton.addEventListener("click", function() {
 
     // Set the content of the cells
     cell1.textContent = no_of_medicine;
-    cell2.innerHTML = "<input type=\"text\" id=\"medicine_name\" name=\"medicine_name\" placeholder=\"search...\">";
+    cell2.innerHTML = "<input type=\"text\" id=\"medicine_name\" name=\"medicine_name\" placeholder=\"Medicine Name\">";
     cell3.innerHTML = "<select name=\"BA meal\" id=\"BAmeal\"><option value=\"before\">before</option><option value=\"after\">after</option></select>";
-    cell4.innerHTML = "<input type=\"number\" id=\"times\" name=\"times\">";
+    cell4.innerHTML = "<input type=\"number\" id=\"times\" name=\"times\" placeholder=\"Times A Day\">";
     cell5.innerHTML = "<input type=\"number\" id=\"duration\" name=\"duration\">";
     
 
@@ -119,4 +119,36 @@ addButton.addEventListener("click", function() {
 
     // Append the new row to the table
     table.appendChild(newRow);
+});
+
+// Add table for test
+
+const table1 = document.getElementById("testTable");
+
+// Get the button element
+const addButton1 = document.getElementById("add_test");
+
+//Number track
+var no_of_test = 1;
+addButton1.addEventListener("click", function() {
+    no_of_test++;
+    // Create a new row
+    const newRow = document.createElement("tr");
+
+    // Create the cells for the new row
+    const cell1 = document.createElement("td");
+    const cell2 = document.createElement("td");
+
+    // Set the content of the cells
+    cell1.textContent = no_of_test;
+    cell2.innerHTML = "<input type=\"text\" id=\"testing_name\" name=\"testing_name\" placeholder=\"Testing_name\">";
+    
+
+
+    // Append the cells to the new row
+    newRow.appendChild(cell1);
+    newRow.appendChild(cell2);
+
+    // Append the new row to the table
+    table1.appendChild(newRow);
 });

@@ -35,13 +35,13 @@
 			</li>
       <li>
 			<li>
-				<a href="#">
+				<a href="MakePrescription.html">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">My Prescriptions</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="MyPatient.html">
 					<i class='bx bxs-message-dots' ></i>
 					<span class="text">My Patients</span> <!-- TODO -->
 				</a>
@@ -119,6 +119,30 @@
 		</main>
 		<!-- MAIN -->
 
+    <h2>Patient Information</h2>
+    <div class="patient-information">
+        <table>
+            <tr>
+                <td>Patient Name:</td>
+                <td><input type="text" name="name" id=""></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="text" name="Age" id=""></td>
+            </tr>
+            <tr>
+                <td>Contact:</td>
+                <td><input type="text" name="Age" id=""></td>
+            </tr>
+            <tr>
+                <td>Short Note:</td>
+                <td><textarea name="note" rows="5"></textarea></td>
+            </tr>
+        </table>
+    </div>
+    
+
+    <h2>About Medicine</h2>
     <table id='medicineTable'>
       <tr>
           <th>No.</th>
@@ -132,7 +156,7 @@
           <td>
               <!-- <input type="text" id="medicine_name" name="medicine_name" placeholder="search..."> -->
 			  <div class="input-group">
-				<input type="search" class="form-control rounded" placeholder="Search medicine" aria-label="Search" aria-describedby="search-addon" />
+				<input type="search" class="form-control rounded" placeholder="Medicine Name" aria-label="Search" aria-describedby="search-addon" />
 				<!-- <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button> -->
 			  </div>
           </td>
@@ -143,15 +167,37 @@
               </select>
           </td>
           <td>
-              <input type="number" id="times" name="times">
-          </td>
+            <!-- <input type="text" id="medicine_name" name="medicine_name" placeholder="search..."> -->
+            <div class="input-group">
+              <input type="search" class="form-control rounded" placeholder="Times A Day" aria-label="Search" aria-describedby="search-addon" />
+              <!-- <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button> -->
+            </div>
+        </td>
           <td>
               <input type="number" id="duration" name="duration">
           </td>
       </tr>
   </table>
   <button id="add_medicine" class="button-71" role="button">Add Medicine</button>
-    
+  
+  <h2>About Testing</h2>
+  <table id='testTable'>
+    <tr>
+        <th>NO.</th>
+        <th>Testing Name</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>
+            <!-- <input type="text" id="medicine_name" name="medicine_name" placeholder="search..."> -->
+            <div class="input-group">
+              <input class="form-control rounded" placeholder="Testing Name" aria-label="Search" aria-describedby="search-addon" />
+              <!-- <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button> -->
+            </div>
+        </td>
+    </tr>
+    </table>
+    <button id="add_test" class="button-71" role="button">Add Test</button>
   <script src="MakePrescription.js"></script>
   <script src="js/MakePrescription.js"></script>
 	</section>

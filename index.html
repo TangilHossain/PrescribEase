@@ -5,142 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PresCribeEase</title>
-    <!-- font awesome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- normalize css -->
-    <link rel = "stylesheet" href = "css/normalize.css">
-    <!-- custom css -->
-    <link rel = "stylesheet" href = "css/main.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
-
-    <!-- header -->
-    <header class = "header bg-blue">
-        <nav class = "navbar bg-blue">
-            <div class = "container flex">
-                <a href = "index.html" class = "navbar-brand">
-                    <img src = "images/PresCribeEase.png" alt = "site logo">
+    <!-- Header -->
+    <header class="header bg-blue">
+        <nav class="navbar bg-blue">
+            <div class="container flex">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/PresCribeEase.png" alt="PresCribeEase logo">
                 </a>
-                <button type = "button" class = "navbar-show-btn">
-                    <img src = "images/ham-menu-icon.png">
+                <button type="button" class="navbar-show-btn" aria-label="Show navigation menu">
+                    <img src="images/ham-menu-icon.png" alt="Menu icon">
                 </button>
 
-                <div class = "navbar-collapse bg-white">
-                    <button type = "button" class = "navbar-hide-btn">
-                        <img src = "images/close-icon.png">
+                <div class="navbar-collapse bg-white">
+                    <button type="button" class="navbar-hide-btn" aria-label="Hide navigation menu">
+                        <img src="images/close-icon.png" alt="Close icon">
                     </button>
-                    <ul class = "navbar-nav">
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Home</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
                         </li>
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">About</a>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
                         </li>
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Contact</a>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
                         </li>
                     </ul>
 
-                    <!-- About Search bar -->
-                    <div class = "search-bar">
+                    <!-- Search bar -->
+                    <div class="search-bar">
                         <form>
-                            <div class = "search-bar box flex">
-                                <span class = "search-icon flex">
-                                    <img src = "images/search-icon-dark.png">
+                            <div class="search-bar box flex">
+                                <span class="search-icon flex">
+                                    <img src="images/search-icon-dark.png" alt="Search icon">
                                 </span>
-                                <input type = "search" class = "search-control" placeholder="Search here">
+                                <input type="search" class="search-control" placeholder="Search here" aria-label="Search">
                             </div>
                         </form>
                     </div>
-                </div> 
+                </div>
             </div>
         </nav>
 
-        <div class = "header-inner text-white text-center">
-            <div class = "container grid">
-                <div class = "header-inner-left">
-                    <h1>your most trusted<br> <span>Prescription Writer Tool</span></h1>
-                    <p class = "lead">the best services for you</p>
-                    <p class = "text text-md">Comprehensive solution for hassle-free prescription writing.</p>
-                    <div class = "btn-group">
-                        <a href = "#" class = "btn btn-white">Learn More</a>
-                        <a href = "login.html" class = "btn btn-light-blue">Sign In</a>
+        <div class="header-inner text-white text-center">
+            <div class="container grid">
+                <div class="header-inner-left">
+                    <h1>Your Most Trusted<br> <span>Prescription Writer Tool</span></h1>
+                    <p class="lead">The best services for you</p>
+                    <p class="text text-md">Comprehensive solution for hassle-free prescription writing.</p>
+                    <div class="btn-group">
+                        <a href="#about" class="btn btn-white">Learn More</a>
+                        <a href="login.php" class="btn btn-light-blue">Sign In</a>
                     </div>
                 </div>
-                <div class = "header-inner-right">
-                    <img src = "images/prescriber.jpg">
+                <div class="header-inner-right">
+                    <img src="images/prescriber.jpg" alt="Prescriber">
                 </div>
             </div>
         </div>
+    </header>
 
-        <main>
-            <section id = "about" class = "about py">
-                <div class = "about-inner">
-                    <div class = "container grid">
-                        <div class = "about-left text-center">
-                            <div class = "section-head">
-                                <h2>About Us</h2>
-                                <div class = "border-line"></div>
-                            </div>
-                            <p class = "text ">Welcome to PresCribeEase, your comprehensive solution for hassle-free prescription writing. We understand that the healthcare landscape is complex, and time is often the most precious resource for both medical professionals and patients. Our mission is to streamline the prescription process, making it efficient, accurate, and secure.</p>
-                            <p class="text">Our vision is to revolutionize the way prescriptions are managed. By leveraging cutting-edge technology and a user-friendly interface.</p>
-                            <a href = "#" class = "btn btn-white">Learn More</a>
+    <main>
+        <section id="about" class="about py">
+            <div class="about-inner">
+                <div class="container grid">
+                    <div class="about-left text-center">
+                        <div class="section-head">
+                            <h2>About Us</h2>
+                            <div class="border-line"></div>
                         </div>
-                        <div class = "about-right flex">
-                            <div class = "img">
-                                <img src = "img/prescription3D.png">
-                            </div>
+                        <p class="text">Welcome to PresCribeEase, your comprehensive solution for hassle-free prescription writing. We understand that the healthcare landscape is complex, and time is often the most precious resource for both medical professionals and patients. Our mission is to streamline the prescription process, making it efficient, accurate, and secure.</p>
+                        <p class="text">Our vision is to revolutionize the way prescriptions are managed by leveraging cutting-edge technology and a user-friendly interface.</p>
+                        <a href="#about" class="btn btn-white">Learn More</a>
+                    </div>
+                    <div class="about-right flex">
+                        <div class="img">
+                            <img src="images/prescription3D.png" alt="3D Prescription">
                         </div>
                     </div>
-                </div>9
-            </section>
-
-            <section id = "banner-one" class = "banner-one text-center">
-                <div class = "container text-white">
-                    <blockquote class = "lead"><i class = "fas fa-quote-left"></i> "Any doctor will admit that any drug can have side effects, and that writing a prescription involves weighing the potential benefits against the risks" 
-                        <i class = "fas fa-quote-right"></i></blockquote>
-                    <small class = "text text-sm">- Mark Udall</small>
                 </div>
-                <div class = "container text-white">
-                    <blockquote class = "lead"><i class = "fas fa-quote-left"></i> "The human body experiences a powerful gravitational pull in the direction of hope. That is why the patient's hopes are the physician's secret weapon. They are the hidden ingredients in any prescription." 
-                        <i class = "fas fa-quote-right"></i></blockquote>
-                    <small class = "text text-sm">- Noam Chomsky</small>
-                </div>
-            </section>
+            </div>
+        </section>
 
+        <section id="banner-one" class="banner-one text-center">
+            <div class="container text-white">
+                <blockquote class="lead">
+                    <i class="fas fa-quote-left"></i> "Any doctor will admit that any drug can have side effects, and that writing a prescription involves weighing the potential benefits against the risks" 
+                    <i class="fas fa-quote-right"></i>
+                </blockquote>
+                <small class="text text-sm">- Mark Udall</small>
+            </div>
+            <div class="container text-white">
+                <blockquote class="lead">
+                    <i class="fas fa-quote-left"></i> "The human body experiences a powerful gravitational pull in the direction of hope. That is why the patient's hopes are the physician's secret weapon. They are the hidden ingredients in any prescription." 
+                    <i class="fas fa-quote-right"></i>
+                </blockquote>
+                <small class="text text-sm">- Noam Chomsky</small>
+            </div>
+        </section>
 
-          <!-- contact section -->
-        <section id = "contact" class = "contact py">
-            <div class = "container grid">
-                <div class = "contact-left">
-                    <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Chittagong%20University%20of%20Engineering%20and%20Technology%20Chattogram+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.acadoo.de/'>Abschlussarbeit schreiben lassen</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=a2f709cb814964a0f0bac2ab73c769f2142f0b74'></script>
+        <!-- Contact Section -->
+        <section id="contact" class="contact py">
+            <div class="container grid">
+                <div class="contact-left">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        id="gmap_canvas" 
+                        src="https://maps.google.com/maps?width=100%&height=400&hl=en&q=Chittagong%20University%20of%20Engineering%20and%20Technology%20Chattogram&t=&z=12&ie=UTF8&iwloc=B&output=embed">
+                    </iframe> 
+                    <a href='https://www.acadoo.de/'>Abschlussarbeit schreiben lassen</a> 
+                    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=a2f709cb814964a0f0bac2ab73c769f2142f0b74'></script>
                 </div>
-                <div class = "contact-right text-white text-center bg-blue">
-                    <div class = "contact-head">
-                        <h3 class = "lead">Contact Us</h3>
-                        <p class = "text text-md">Chittagong University of Engineering & Technology, Pahartoli, Raozan, Chittagong</p>
+                <div class="contact-right text-white text-center bg-blue">
+                    <div class="contact-head">
+                        <h3 class="lead">Contact Us</h3>
+                        <p class="text text-md">Chittagong University of Engineering & Technology, Pahartoli, Raozan, Chittagong</p>
                     </div>
                     <form>
-                        <div class = "form-element">
-                            <input type = "text" class = "form-control" placeholder="Your name">
+                        <div class="form-element">
+                            <input type="text" class="form-control" placeholder="Your name" aria-label="Your name">
                         </div>
-                        <div class = "form-element">
-                            <input type = "email" class = "form-control" placeholder="Your email">
+                        <div class="form-element">
+                            <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
                         </div>
-                        <div class = "form-element">
-                            <textarea rows = "5" placeholder="Your Message" class = "form-control"></textarea>
+                        <div class="form-element">
+                            <textarea rows="5" placeholder="Your Message" class="form-control" aria-label="Your message"></textarea>
                         </div>
-                        <button type = "submit" class = "btn btn-white btn-submit">
-                            <i class = "fas fa-arrow-right"></i> Send Message
+                        <button type="submit" class="btn btn-white btn-submit">
+                            <i class="fas fa-arrow-right"></i> Send Message
                         </button>
                     </form>
                 </div>
             </div>
         </section>
-        <!-- end of contact section -->
-        </main>
+        <!-- End of Contact Section -->
+    </main>
 
-    <script src = "js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -169,7 +169,7 @@ body {
 /* CONTENT */
 #content {
 	position: relative;
-	width: calc(100% - 280px);
+	width: calc(100% - 230px);
 	left: 280px;
 	transition: .3s ease;
 }
